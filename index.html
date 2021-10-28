@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Timer </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .heading{
+            text-align: center;
+            background-color: rgb(235, 133, 61);
+            padding:10px;
+        }
+
+        .timer {
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            background-color: white;
+            height: 140px;
+            width: 140px;
+            justify-content: center;
+            align-items: center;
+            transform: translate(98px, -250px);
+        }
+
+        .input_time {
+            width: 49px;
+            height: 27px;
+            text-align: center;
+            font-size: 25px;
+            border: none;
+            outline: none;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        #play,
+        #pause {
+            margin: 2px;
+            height: 30px;
+            width: 30px;
+        }
+
+        svg {
+            border: 2px solid blue;
+            margin: 20px;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading"> Timer </h1>
+    <svg width="300" height="300">
+        <circle cx="150" cy="150" r="80" stroke="green" stroke-width="5" fill="transparent" stroke-dasharray="510"
+            stroke-dashoffset="0" id="circle">
+    </svg>
+
+    <div class="timer">
+        <input type="text" id="time" class="input_time" value="10"> <br>
+        <div class="buttons">
+
+            <img id="play" src="https://www.freeiconspng.com/uploads/pause-button-png-17.png" alt="Play" />
+
+            <img id="pause" src="https://www.freeiconspng.com/uploads/pause-button-png-6.png" alt="Pause" />
+
+        </div>
+    </div>
+
+    <script src="index.js">
+    </script>
+
+</body>
+
+</html>
